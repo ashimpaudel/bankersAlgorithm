@@ -7,7 +7,13 @@
 #define NUMBER_OF_CUSTOMERS  5
 #define NUMBER_OF_RESOURCES  3
 
+typedef struct{
+	int id;
+	int Arr[];
+}Args;
+
 int request_resources(int customer_num, int request[]);
+pthread_mutex_t mutex;
 
 int available[NUMBER_OF_RESOURCES];                         //available amt of each resource, m
 int maximum[NUMBER_OF_CUSTOMERS] [NUMBER_OF_RESOURCES];     //max demand of each customer, nxm
@@ -42,37 +48,61 @@ void main(){
 		
 		}
 	}
+	pthread_t    *customer;
+	customer  =  (pthread_t*)malloc(NUMBER_OF_CUSTOMERS*sizeof(pthread_t));  
+
+	for(i=0; i<NUMBER_OF_CUSTOMERS; i++){
+		Args argm;
+		argm.id = i;
+		argm.Arr = request[i][0];
+		pthread_create(&customer[i],NULL,runnerFunc,&argm);
+	}
+}
+void* runnerFunc(void* args){
+		 
+	int id = ((pArgs*)args)->id;
+	int Arr = ((pArgs*)args)->Arr;
+
+	//customer will continually loop requesting and releasing random number of resources
+	while (1) {
+		sleep(rand()%3); 
+		request_resources(id, Arr);
+		release_resources(id, Arr);
+		}
+	return NULL;
+}
+
+bool safetyCheck(int id, Arr[]){
+	int i;
+	int work[NUMBER_OF_RESOURCES];
+	int finish[NUMBER_OF_CUSTOMERS];
+	memcpy(work, available, sizeof(available));
+	for(i=0; i<NUMBER_OF_CUSTOMERS; i++)
+		finish[i] = false
+	int counter;
+	for(counter=0; counter<NUMBER_OF_CUSTOMERS; counter++){
+		//finding an index i such that both Finish[i]== false and Need[i] <= Work
+		for(i=0; i<NUMBER_OF_CUSTOMERS; i++){
+			if (finish[i] == false && isLessThan(need[i][0], Work) ){
+				//work = work + allocation
+				int j;
+				for(j=0; j<NUMBER_OF_RESOURCES; j++){
+					work[j] += allocation[i][j];
+				}
+				finish[i] = true;
+			}
+		}
+	//check if finish[i]== true for all is 
+	counter = 0;
+	for(i=0; i<NUMBER_OF_CUSTOMERS;i++){
+		if(finish[i] = true)
+			counter++
+		if(counter == NUMBER_OF_CUSTOMERS)
+			return true
+		return false
+
 
 }
-int i;
-//safety algorithm
-int work[NUMBER_OF_RESOURCES];
-int finish[NUMBER_OF_CUSTOMERS];
-memcpy(work, available, sizeof(available));
-for(i=0; i<NUMBER_OF_CUSTOMERS; i++)
-	finish[i] = false
-int counter;
-for(counter=0; counter<NUMBER_OF_CUSTOMERS; counter++){
-	//finding an index i such that both Finish[i]== false and Need[i] <= Work
-	for(i=0; i<NUMBER_OF_CUSTOMERS; i++){
-		if (finish[i] == false && isLessThan(need[i][0], Work) ){
-			//work = work + allocation
-			int j;
-			for(j=0; j<NUMBER_OF_RESOURCES; j++){
-				work[j] += allocation[i][j];
-			}
-			finish[i] = true;
-		}
-	}
-//check if finish[i]== true for all is 
-counter = 0;
-for(i=0; i<NUMBER_OF_CUSTOMERS;i++){
-	if(finish[i] = true)
-		counter++
-	if(counter == NUMBER_OF_CUSTOMERS)
-		return true
-	return false
-
 //Customers
 
 //creating n customer threads that request and release resources from the bank
@@ -88,7 +118,12 @@ while(1){
 }
 
 int request_resources(int customer_num, int request[]){
-	return 0
+	pthread_mutex_lock(&mutex);
+	if (safetyCheck(id, request)){
+		int sumNeed = 0;
+		for(
+	}
+
 }
 
 int release_resources(int customer_num, int release[]){
