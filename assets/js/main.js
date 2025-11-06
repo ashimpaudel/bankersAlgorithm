@@ -25,5 +25,5 @@ contactForm?.addEventListener('submit', event => {
     const form = event.currentTarget;
     form.classList.add('is-submitted');
     form.reset();
-    alert('Thank you for reaching out! We will connect with you soon.');
+    alert('Thank you for contacting KIST Boys Hostel! Damodar sir will reach out shortly.');
 });
