@@ -1,0 +1,23 @@
+<svg width="520" height="360" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KIST Hostel Nepali meal illustration</title>
+  <desc id="desc">Illustration showing dal-bhat-tarkari served in the hostel dining hall.</desc>
+  <defs>
+    <linearGradient id="table" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fbe8eb"/>
+      <stop offset="100%" stop-color="#f2d7bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" rx="24" fill="#f9f5ef"/>
+  <rect x="40" y="200" width="440" height="120" rx="20" fill="url(#table)"/>
+  <g transform="translate(140 120)">
+    <ellipse cx="120" cy="120" rx="120" ry="70" fill="#fff" stroke="#c41e3a" stroke-width="4"/>
+    <circle cx="120" cy="120" r="36" fill="#f7e9b0"/>
+    <path d="M120 84c-16 8-30 22-30 36s14 28 30 36c16-8 30-22 30-36s-14-28-30-36z" fill="#f4c572"/>
+    <circle cx="60" cy="140" r="28" fill="#f4b23c"/>
+    <circle cx="180" cy="140" r="28" fill="#c7e27b"/>
+    <path d="M60 124c12 10 12 22 0 32-8-6-12-14-12-20s4-14 12-12z" fill="#ef873d"/>
+    <path d="M180 126c10 8 14 20 6 28-8 4-16-2-22-12 2-8 8-16 16-16z" fill="#7aa03d"/>
+  </g>
+  <text x="260" y="80" font-family="'Hind', sans-serif" font-size="22" text-anchor="middle" fill="#7a1225">घर जस्तै दाल भात</text>
+  <path d="M80 150h360" stroke="#1a4a8d" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
+</svg>

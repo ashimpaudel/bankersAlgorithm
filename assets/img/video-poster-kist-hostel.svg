@@ -1,0 +1,18 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Video placeholder for KIST Hostel walkthrough</title>
+  <desc id="desc">Stylised rooftop scene representing the KIST Boys Hostel virtual tour.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fbe7ea"/>
+      <stop offset="100%" stop-color="#eef3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="28" fill="url(#bg)"/>
+  <path d="M40 270c60-60 140-100 220-68s170 40 240 10 100-20 100-20v128H40z" fill="#dce6f7" opacity="0.7"/>
+  <rect x="120" y="120" width="400" height="180" rx="20" fill="#fff" opacity="0.88" stroke="#1a4a8d" stroke-width="4"/>
+  <rect x="180" y="80" width="280" height="60" rx="12" fill="#c41e3a" opacity="0.85"/>
+  <text x="320" y="118" font-family="'Hind', sans-serif" font-size="22" text-anchor="middle" fill="#fff">KIST Hostel Virtual Tour</text>
+  <circle cx="320" cy="210" r="48" fill="#c41e3a"/>
+  <polygon points="312,190 352,210 312,230" fill="#fff"/>
+  <text x="320" y="310" font-family="'Poppins', sans-serif" font-size="16" text-anchor="middle" fill="#1a4a8d">Replace with your rooftop &amp; study hall walkthrough</text>
+</svg>

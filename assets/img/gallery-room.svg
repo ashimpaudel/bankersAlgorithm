@@ -1,0 +1,33 @@
+<svg width="520" height="360" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KIST Hostel triple room illustration</title>
+  <desc id="desc">Illustration showing triple sharing student room with study desks and lockers.</desc>
+  <defs>
+    <linearGradient id="room-bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef3ff"/>
+      <stop offset="100%" stop-color="#fbe7ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" rx="24" fill="url(#room-bg)"/>
+  <g transform="translate(60 60)">
+    <rect width="400" height="240" rx="18" fill="#fff" opacity="0.92" stroke="#1a4a8d" stroke-width="3"/>
+    <rect x="20" y="30" width="360" height="80" fill="#eef3ff"/>
+    <g transform="translate(40 40)" fill="#c41e3a" opacity="0.8">
+      <rect width="70" height="60" rx="8"/>
+      <rect x="110" width="70" height="60" rx="8"/>
+      <rect x="220" width="70" height="60" rx="8"/>
+    </g>
+    <g transform="translate(40 140)" fill="#f7f1ec">
+      <rect width="70" height="40" rx="6"/>
+      <rect x="110" width="70" height="40" rx="6"/>
+      <rect x="220" width="70" height="40" rx="6"/>
+    </g>
+    <g transform="translate(40 190)" fill="#1a4a8d" opacity="0.85">
+      <rect width="70" height="40" rx="6"/>
+      <rect x="110" width="70" height="40" rx="6"/>
+      <rect x="220" width="70" height="40" rx="6"/>
+    </g>
+    <path d="M20 120h360" stroke="#1a4a8d" stroke-width="4" opacity="0.3"/>
+    <path d="M20 170h360" stroke="#c41e3a" stroke-width="3" opacity="0.25"/>
+    <text x="200" y="230" font-family="'Poppins', sans-serif" font-size="18" text-anchor="middle" fill="#7a1225">Triple सामूहिक Study Setup</text>
+  </g>
+</svg>
