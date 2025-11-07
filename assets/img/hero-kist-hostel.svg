@@ -1,5 +1,5 @@
 <svg width="720" height="480" viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Illustration of KIST Boys Hostel courtyard</title>
+  <title id="title">Illustration of Nest Boy's Hostel courtyard</title>
   <desc id="desc">Warm illustration showing a Kathmandu hostel courtyard with Nepali flag colours and surrounding hills.</desc>
   <defs>
     <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
@@ -32,7 +32,7 @@
     <rect x="240" y="180" width="60" height="100" fill="#c41e3a" rx="8"/>
     <rect x="252" y="188" width="36" height="76" fill="#f4f0ec"/>
     <rect x="220" y="60" width="120" height="40" fill="#1a4a8d" rx="10"/>
-    <text x="280" y="88" font-family="'Hind', sans-serif" font-size="20" text-anchor="middle" fill="#fff">KIST Hostel</text>
+    <text x="280" y="88" font-family="'Hind', sans-serif" font-size="20" text-anchor="middle" fill="#fff">Nest Boy's Hostel</text>
   </g>
   <path d="M120 360c40-10 100-16 150 0s120 20 180 6 140-30 200-16" stroke="#c41e3a" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.3"/>
   <g transform="translate(120 320)">
