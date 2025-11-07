@@ -1,0 +1,56 @@
+<svg width="560" height="420" viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f4f9b" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#3d7bd9" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#9fc1ff" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e7ff"/>
+      <stop offset="100%" stop-color="#f3f7ff"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b7c9ff"/>
+      <stop offset="100%" stop-color="#e5edff"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" rx="28" fill="url(#bg)"/>
+  <g opacity="0.25">
+    <circle cx="80" cy="340" r="120" fill="#fff"/>
+    <circle cx="470" cy="70" r="95" fill="#fff"/>
+    <circle cx="510" cy="360" r="70" fill="#fff"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="70" y="90" width="340" height="240" rx="24" fill="#f9fbff" opacity="0.95"/>
+  </g>
+  <rect x="90" y="120" width="300" height="180" rx="18" fill="url(#window)"/>
+  <rect x="90" y="120" width="300" height="70" rx="18" fill="#f0f5ff"/>
+  <rect x="110" y="140" width="55" height="24" rx="12" fill="#1f4f9b" opacity="0.85"/>
+  <rect x="175" y="140" width="95" height="24" rx="12" fill="#3d7bd9" opacity="0.7"/>
+  <rect x="110" y="186" width="120" height="72" rx="14" fill="#ffffff" opacity="0.95"/>
+  <rect x="240" y="186" width="130" height="72" rx="14" fill="#ffffff" opacity="0.9"/>
+  <rect x="110" y="270" width="95" height="12" rx="6" fill="#d2e3ff"/>
+  <rect x="210" y="270" width="75" height="12" rx="6" fill="#d2e3ff"/>
+  <rect x="300" y="270" width="55" height="12" rx="6" fill="#d2e3ff"/>
+  <path d="M398 270C398 225.817 433.817 190 478 190C522.183 190 558 225.817 558 270H398Z" fill="#f8fbff" opacity="0.85"/>
+  <path d="M420 270C420 236.862 446.862 210 480 210C513.138 210 540 236.862 540 270H420Z" fill="url(#path)"/>
+  <circle cx="480" cy="208" r="16" fill="#f8fbff"/>
+  <rect x="428" y="278" width="108" height="12" rx="6" fill="#c7dcff"/>
+  <rect x="438" y="296" width="88" height="12" rx="6" fill="#d9e7ff"/>
+  <rect x="450" y="314" width="64" height="12" rx="6" fill="#e8f0ff"/>
+  <g opacity="0.8">
+    <circle cx="150" cy="330" r="32" fill="#1f4f9b"/>
+    <circle cx="215" cy="330" r="38" fill="#3d7bd9"/>
+    <circle cx="275" cy="330" r="30" fill="#5a95e6"/>
+  </g>
+  <text x="100" y="360" fill="#0f1f3f" font-family="'Poppins', 'Hind', sans-serif" font-size="22" font-weight="600">Nest Boy's Hostel</text>
+  <text x="100" y="388" fill="#0f1f3f" font-family="'Hind', 'Poppins', sans-serif" font-size="18">Sanepa • सुरक्षित र सहज विद्यार्थी बसोबास</text>
+  <defs>
+    <filter id="shadow" x="50" y="70" width="380" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.14 0 0 0 0 0.24 0 0 0 0 0.42 0 0 0 0.12 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+    </filter>
+  </defs>
+</svg>

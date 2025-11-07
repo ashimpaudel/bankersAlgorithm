@@ -25,5 +25,5 @@ contactForm?.addEventListener('submit', event => {
     const form = event.currentTarget;
     form.classList.add('is-submitted');
     form.reset();
-    alert("Thank you for contacting Nest Boy's Hostel! Damodar sir will reach out shortly.");
+    alert("Thank you for contacting Nest Boy's Hostel! Our guardian team will reach out shortly.");
 });
